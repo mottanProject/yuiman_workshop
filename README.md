@@ -6,3 +6,5 @@
 3. docker psでpostgres_serverが起動しているのを確認
 4. docker exec -it postgres_server bashでコンテナに入る
 5. postgreにログインする
+
+### mainブランチ直push禁止　
