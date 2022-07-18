@@ -19,9 +19,11 @@ CREATE TABLE yuiman.t_user_info (uid INTEGER NOT NULL,
                                  name VARCHAR(20) NOT NULL,
                                  u_type_id INTEGER NOT NULL,
                                  auth BOOLEAN NOT NULL,
-                                 join_date TIMESTAMP,
-                                 graduate_date TIMESTAMP,
+                                 join_date DATE,
+                                 graduate_date DATE,
                                  profile_picture_path VARCHAR(255),
+                                 movie_times INTEGER DEFAULT 0,
+                                 review_times INTEGER DEFAULT 0,
                                  PRIMARY KEY(uid));
 /** movie_list **/
 CREATE TABLE yuiman.t_movie_list (movie_id SERIAL NOT NULL,
