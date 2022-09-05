@@ -13,5 +13,8 @@ public class SelectLogininfo {
         for(logininfoModel list : lgList){
             System.out.println(list.getUid() + "," + list.getMailaddress() + "," + list.getPassword());
         }
+
+        Integer uid = lgDAO.selectUID("test@mail.com");
+        System.out.println(uid);
     }
 }

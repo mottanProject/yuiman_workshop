@@ -7,8 +7,8 @@ import com.workshop.yuiman.dao.logininfoDAO;
 public class InsertLogininfo {
     public static void main(String[] args){
         //追加する情報を設定
-        String mail = "f@mail.com"; //メールアドレス
-        String pass = "fff"; //パスワード
+        String mail = "g@mail.com"; //メールアドレス
+        String pass = "ggg"; //パスワード
 
         logininfoDAO lgDAO = new logininfoDAO();
         //INSERT
@@ -20,6 +20,8 @@ public class InsertLogininfo {
         }else{
             System.out.println("追加できませんでした");
         }
+
+
     }
 
 

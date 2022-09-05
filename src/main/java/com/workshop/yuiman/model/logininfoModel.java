@@ -2,12 +2,13 @@ package com.workshop.yuiman.model;
 import java.sql.Timestamp;
 
 public class logininfoModel {
-    private String uid;
+
+    private int uid;
     private String mailaddress;
     private String password;
     private Timestamp loginDate;
 
-    public logininfoModel(String uid, String mailaddress, String password){
+    public logininfoModel(Integer uid, String mailaddress, String password){
         this.uid = uid;
         this.mailaddress = mailaddress;
         this.password = password;
@@ -17,11 +18,11 @@ public class logininfoModel {
         this.password = password;
     }
 
-    public String getUid() {
+    public Integer getUid() {
         return uid;
     }
 
-    public void setUid(String uid) {
+    public void setUid(Integer uid) {
         this.uid = uid;
     }
 
