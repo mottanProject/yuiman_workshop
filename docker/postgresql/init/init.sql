@@ -11,12 +11,13 @@ CREATE SCHEMA yuiman;
 /**  login_info **/
 CREATE TABLE yuiman.t_login_info (uid SERIAL NOT NULL,
                                   mailaddress VARCHAR(355) NOT NULL,
-                                  password VARCHAR(50) NOT NULL,
+                                  password VARCHAR(255) NOT NULL,
                                   login_date_last TIMESTAMP,
                                   PRIMARY KEY(uid), UNIQUE(mailaddress));
 /** user_info **/
 CREATE TABLE yuiman.t_user_info (uid INTEGER NOT NULL,
-                                 name VARCHAR(20) NOT NULL,
+                                 name VARCHAR(100) NOT NULL,
+                                 slackname VARCHAR(100),
                                  u_type_id INTEGER NOT NULL,
                                  auth BOOLEAN NOT NULL,
                                  join_date DATE,
