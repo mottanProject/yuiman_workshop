@@ -14,6 +14,7 @@ public class UserInfoDto {
     private int typeId;
     private boolean auth;
     private LocalDateTime joinDate;
+    private LocalDateTime graduateDate;
     private String profileImgPath;
     private int movieTimes;
     private int reviewTimes;

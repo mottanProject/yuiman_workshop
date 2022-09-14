@@ -18,13 +18,16 @@ public class UserInfoRepository {
     public void registInitUserInfo(UserInfoDto userInfo) {
         jdbcTemplate.update(
                 "INSERT INTO yuiman.t_user_info "
-                        + "(uid, name, slackname, u_type_id, auth, movie_times. review_times) "
-                        + "Values(?,?,?,?,?,?)",
+                        + "(uid, name, slackname, u_type_id, auth, join_date, graduate_date, profile_picture_path, movie_times, review_times) "
+                        + "Values(?,?,?,?,?,?,?,?,?,?)",
                 userInfo.getUid(),
                 userInfo.getName(),
                 userInfo.getSlackName(),
                 userInfo.getTypeId(),
                 userInfo.isAuth(),
+                userInfo.getJoinDate(),
+                userInfo.getGraduateDate(),
+                userInfo.getProfileImgPath(),
                 userInfo.getMovieTimes(),
                 userInfo.getReviewTimes());
     }
